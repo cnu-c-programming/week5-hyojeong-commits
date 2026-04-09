@@ -1,11 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+void echo() {
+    char buf[5];
+fgets(buf, sizeof(buf), stdin);    
+printf("%s\n", buf);
+}
 
 int main() {
-    int arr[5] = {10, 20, 30, 40, 50};
-    int size = 5;
-    int index;
-
-    scanf("%d", &index);
-
-    reutrn 0;
+    int x = 42;
+    echo();
+    return 0;
 }
