@@ -3,7 +3,12 @@
 long my_strol(char *str, char **endptr){
     long res = 0;
 
-    while()
+   while (*str >= '0' && *str <= '9') { 
+        res = res * 10 + (*str - 48);   
+        str++;
+    }
+    *endptr = str; 
+    return res;
 }
 
 int main(){
