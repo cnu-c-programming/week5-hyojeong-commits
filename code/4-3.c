@@ -6,6 +6,11 @@ int main() {
     int index;
 
     scanf("%d", &index);
+    if (index < size) {
+        printf("%d\n", arr[index]);
+    } else {
+        printf("Error!\n");
+    }
 
-    reutrn 0;
+    return 0;
 }
