@@ -4,6 +4,7 @@ void print_reverse(int *arr, int size){
     int *ptr=arr + (size-1);
     for(int i=0; i<size; i++){
         printf("%d", *ptr);
+        if(i<size-1){printf(" ");}
         ptr--;}
     }
 
